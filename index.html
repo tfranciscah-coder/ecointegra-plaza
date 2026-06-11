@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -5,99 +6,129 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ECOINTEGRA PLAZA</title>
 
-<link rel="stylesheet" href="css/style.css">
-
 <style>
 
-.hero{
-height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:20px;
-background:linear-gradient(
-180deg,
-#ffffff,
-#e7f8ec,
-#b7efc5
-);
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
 }
 
-.logo-circle{
+body{
+height:100vh;
+background:linear-gradient(
+180deg,
+#0f766e,
+#14b8a6,
+#dff7f5
+);
+display:flex;
+justify-content:center;
+align-items:center;
+padding:20px;
+}
+
+.card{
+background:white;
+width:100%;
+max-width:420px;
+border-radius:30px;
+padding:30px;
+text-align:center;
+box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+
+.logo{
 width:120px;
 height:120px;
-background:#1f9d55;
+margin:auto;
+background:#14b8a6;
 border-radius:50%;
 display:flex;
 align-items:center;
 justify-content:center;
 font-size:60px;
-color:white;
 margin-bottom:20px;
 }
 
-.app-name{
-font-size:36px;
-font-weight:bold;
-color:#1f9d55;
+h1{
+color:#0f766e;
 margin-bottom:10px;
 }
 
 .subtitle{
-font-size:18px;
-margin-bottom:40px;
-color:#555;
+color:#666;
+margin-bottom:25px;
 }
 
-.role-btn{
-width:250px;
-padding:15px;
-margin:10px;
-border:none;
-border-radius:30px;
-background:#1f9d55;
-color:white;
-font-size:18px;
-font-weight:bold;
-text-decoration:none;
+.stats{
+display:flex;
+justify-content:space-around;
+margin-bottom:25px;
+}
+
+.stat h2{
+color:#0f766e;
+}
+
+.btn{
 display:block;
-}
-
-.role-btn:hover{
-opacity:0.9;
+background:#14b8a6;
+color:white;
+padding:15px;
+border-radius:15px;
+text-decoration:none;
+font-weight:bold;
+margin-top:10px;
 }
 
 </style>
-
 </head>
 
 <body>
 
-<div class="hero">
+<div class="card">
 
-<div class="logo-circle">
+<div class="logo">
 🌱
 </div>
 
-<div class="app-name">
-ECOINTEGRA PLAZA
-</div>
+<h1>ECOINTEGRA PLAZA</h1>
 
-<div class="subtitle">
+<p class="subtitle">
 Transformando la sustentabilidad en una experiencia diaria
+</p>
+
+<div class="stats">
+
+<div class="stat">
+<h2>25+</h2>
+<p>Locales</p>
 </div>
 
-<a href="dashboard.html" class="role-btn">
-Administrador
+<div class="stat">
+<h2>1450</h2>
+<p>Kg reciclados</p>
+</div>
+
+<div class="stat">
+<h2>92%</h2>
+<p>Impacto</p>
+</div>
+
+</div>
+
+<a class="btn" href="dashboard.html">
+Ingresar como Administrador
 </a>
 
-<a href="dashboard.html" class="role-btn">
-Trabajador
+<a class="btn" href="cliente.html">
+Ingresar como Cliente
 </a>
 
 </div>
 
 </body>
 </html>
+```

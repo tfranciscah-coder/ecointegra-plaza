@@ -1,4 +1,4 @@
-```html id="kp4wrs"
+```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -21,10 +21,10 @@ padding-bottom:90px;
 }
 
 .header{
-background:#0f766e;
+background:linear-gradient(135deg,#0f766e,#14b8a6);
 color:white;
-padding:20px;
-border-radius:0 0 25px 25px;
+padding:25px;
+border-radius:0 0 30px 30px;
 }
 
 .container{
@@ -35,20 +35,20 @@ padding:15px;
 background:white;
 padding:20px;
 border-radius:20px;
-box-shadow:0 4px 10px rgba(0,0,0,.08);
 text-align:center;
+box-shadow:0 4px 10px rgba(0,0,0,.08);
 margin-bottom:15px;
 }
 
-.map{
+.map-icon{
 font-size:80px;
 margin:10px 0;
 }
 
 .local{
 background:white;
-padding:15px;
-border-radius:18px;
+padding:18px;
+border-radius:20px;
 margin-bottom:12px;
 box-shadow:0 4px 10px rgba(0,0,0,.08);
 display:flex;
@@ -56,12 +56,29 @@ justify-content:space-between;
 align-items:center;
 }
 
+.info h3{
+color:#0f766e;
+margin-bottom:4px;
+}
+
+.info p{
+font-size:13px;
+color:#666;
+}
+
 .score{
 background:#14b8a6;
 color:white;
-padding:8px 12px;
-border-radius:12px;
+padding:10px 14px;
+border-radius:14px;
 font-weight:bold;
+}
+
+.section-title{
+font-size:18px;
+font-weight:bold;
+color:#0f766e;
+margin-bottom:12px;
 }
 
 .bottom-nav{
@@ -90,66 +107,61 @@ text-align:center;
 <body>
 
 <div class="header">
-<h2>🗺️ Red Plaza Ñuñoa</h2>
-<p>Locales adheridos a ECOINTEGRA PLAZA</p>
+<h1>🗺️ Red Plaza Ñuñoa</h1>
+<p>Conectando locales comprometidos con la sustentabilidad</p>
 </div>
 
 <div class="container">
 
 <div class="map-card">
-<h3>Mapa de Locales Sustentables</h3>
 
-<div class="map">
+<div class="map-icon">
 🌱
 </div>
 
-<p>
-Red colaborativa de establecimientos gastronómicos comprometidos con la sustentabilidad.
+<h3>Red de Colaboración Sustentable</h3>
+
+<p style="margin-top:10px;">
+Los establecimientos comparten buenas prácticas,
+reciclaje y economía circular.
 </p>
+
+</div>
+
+<div class="section-title">
+Ranking Sustentable
 </div>
 
 <div class="local">
-<div>
-<b>☕ Café Sustentable</b><br>
-Participante activo
+<div class="info">
+<h3>☕ Café Sustentable</h3>
+<p>Participación destacada</p>
 </div>
-
-<div class="score">
-95%
-</div>
+<div class="score">95%</div>
 </div>
 
 <div class="local">
-<div>
-<b>🍽️ Eco Bistro</b><br>
-Economía circular
+<div class="info">
+<h3>🍽️ Eco Bistro</h3>
+<p>Economía circular</p>
 </div>
-
-<div class="score">
-91%
-</div>
+<div class="score">91%</div>
 </div>
 
 <div class="local">
-<div>
-<b>🥗 Verde Natural</b><br>
-Reciclaje avanzado
+<div class="info">
+<h3>🥗 Verde Natural</h3>
+<p>Reciclaje avanzado</p>
 </div>
-
-<div class="score">
-88%
-</div>
+<div class="score">88%</div>
 </div>
 
 <div class="local">
-<div>
-<b>🌎 Gastro Circular</b><br>
-Gestión sustentable
+<div class="info">
+<h3>🌎 Gastro Circular</h3>
+<p>Gestión sustentable</p>
 </div>
-
-<div class="score">
-84%
-</div>
+<div class="score">84%</div>
 </div>
 
 </div>

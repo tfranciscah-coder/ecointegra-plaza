@@ -1,1 +1,248 @@
-<!DOCTYPE html> <html lang="es"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>ECOINTEGRA PLAZA</title> <style> *{ margin:0; padding:0; box-sizing:border-box; font-family:Arial, sans-serif; } body{ background:#dff7f5; padding-bottom:90px; } .header{ background:#0f766e; color:white; padding:20px; border-radius:0 0 25px 25px; } .header h1{ font-size:22px; } .header p{ margin-top:5px; font-size:13px; opacity:.9; } .container{ padding:15px; } .stats{ display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:-20px; } .stat-card{ background:white; padding:15px; border-radius:20px; box-shadow:0 4px 10px rgba(0,0,0,.08); text-align:center; } .stat-number{ font-size:28px; font-weight:bold; color:#0f766e; } .section-title{ margin:20px 0 10px; font-size:18px; font-weight:bold; color:#0f766e; } .module{ background:white; padding:15px; border-radius:18px; margin-bottom:12px; box-shadow:0 4px 10px rgba(0,0,0,.08); display:flex; justify-content:space-between; align-items:center; } .module-icon{ font-size:28px; } .module-info{ flex:1; margin-left:15px; } .module-info h3{ font-size:16px; } .module-info p{ font-size:12px; color:#666; margin-top:3px; } .btn{ background:#14b8a6; color:white; padding:8px 15px; border-radius:12px; text-decoration:none; font-size:13px; } .bottom-nav{ position:fixed; bottom:0; left:0; width:100%; background:white; display:flex; justify-content:space-around; padding:12px; box-shadow:0 -3px 10px rgba(0,0,0,.1); } .bottom-nav a{ text-decoration:none; color:#0f766e; font-size:12px; font-weight:bold; text-align:center; } </style> </head> <body> <div class="header"> <h1>🌱 ECOINTEGRA PLAZA</h1> <p>Panel principal de sustentabilidad</p> </div> <div class="container"> <div class="stats"> <div class="stat-card"> <div class="stat-number">78%</div> <p>Residuos reciclados</p> </div> <div class="stat-card"> <div class="stat-number">92%</div> <p>Nivel sustentable</p> </div> <div class="stat-card"> <div class="stat-number">12</div> <p>Cursos completados</p> </div> <div class="stat-card"> <div class="stat-number">1450</div> <p>Kg recuperados</p> </div> </div> <div class="section-title"> Módulos principales </div> <div class="module"> <div class="module-icon">📚</div> <div class="module-info"> <h3>Academia Sustentable</h3> <p>Cursos y capacitaciones</p> </div> <a class="btn" href="academia.html"> Entrar </a> </div> <div class="module"> <div class="module-icon">♻️</div> <div class="module-info"> <h3>Registro de Acciones</h3> <p>Gestión sustentable diaria</p> </div> <a class="btn" href="acciones.html"> Entrar </a> </div> <div class="module"> <div class="module-icon">📊</div> <div class="module-info"> <h3>Impacto Ambiental</h3> <p>Resultados y métricas</p> </div> <a class="btn" href="impacto.html"> Entrar </a> </div> <div class="module"> <div class="module-icon">🗺️</div> <div class="module-info"> <h3>Red Plaza Ñuñoa</h3> <p>Locales adheridos</p> </div> <a class="btn" href="red.html"> Entrar </a> </div> </div> <div class="bottom-nav"> <a href="dashboard.html">🏠<br>Inicio</a> <a href="academia.html">📚<br>Academia</a> <a href="impacto.html">📊<br>Impacto</a> <a href="cliente.html">👤<br>Cliente</a> </div> </body> </html>
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard Premium</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#dff7f5;
+padding-bottom:90px;
+}
+
+.header{
+background:linear-gradient(135deg,#0f766e,#14b8a6);
+color:white;
+padding:25px;
+border-radius:0 0 30px 30px;
+}
+
+.user{
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
+
+.avatar{
+width:55px;
+height:55px;
+border-radius:50%;
+background:white;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:28px;
+}
+
+.welcome{
+margin-top:15px;
+}
+
+.welcome h2{
+font-size:24px;
+}
+
+.container{
+padding:15px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:12px;
+margin-top:-20px;
+}
+
+.metric{
+background:white;
+border-radius:20px;
+padding:18px;
+text-align:center;
+box-shadow:0 4px 10px rgba(0,0,0,.08);
+}
+
+.metric h2{
+color:#0f766e;
+font-size:30px;
+}
+
+.section-title{
+margin:20px 0 10px;
+font-size:18px;
+font-weight:bold;
+color:#0f766e;
+}
+
+.module{
+background:white;
+padding:18px;
+border-radius:20px;
+margin-bottom:12px;
+box-shadow:0 4px 10px rgba(0,0,0,.08);
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
+
+.icon{
+font-size:30px;
+}
+
+.info{
+flex:1;
+margin-left:15px;
+}
+
+.info h3{
+color:#0f766e;
+}
+
+.info p{
+font-size:13px;
+color:#666;
+margin-top:4px;
+}
+
+.btn{
+background:#14b8a6;
+color:white;
+padding:10px 14px;
+border-radius:12px;
+text-decoration:none;
+font-size:13px;
+}
+
+.bottom-nav{
+position:fixed;
+bottom:0;
+left:0;
+width:100%;
+background:white;
+display:flex;
+justify-content:space-around;
+padding:12px;
+box-shadow:0 -3px 10px rgba(0,0,0,.1);
+}
+
+.bottom-nav a{
+text-decoration:none;
+color:#0f766e;
+font-size:12px;
+font-weight:bold;
+text-align:center;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="header">
+
+<div class="user">
+<div>
+<h3>ECOINTEGRA PLAZA</h3>
+<p>Panel Administrativo</p>
+</div>
+
+<div class="avatar">
+👩
+</div>
+</div>
+
+<div class="welcome">
+<h2>Bienvenida, Tamara</h2>
+<p>Monitorea el impacto sustentable de tu local</p>
+</div>
+
+</div>
+
+<div class="container">
+
+<div class="grid">
+
+<div class="metric">
+<h2>78%</h2>
+<p>Reciclaje</p>
+</div>
+
+<div class="metric">
+<h2>92%</h2>
+<p>Impacto</p>
+</div>
+
+<div class="metric">
+<h2>1450</h2>
+<p>Kg Recuperados</p>
+</div>
+
+<div class="metric">
+<h2>12</h2>
+<p>Cursos</p>
+</div>
+
+</div>
+
+<div class="section-title">
+Módulos Principales
+</div>
+
+<div class="module">
+<div class="icon">📚</div>
+<div class="info">
+<h3>Academia Sustentable</h3>
+<p>Capacitaciones y certificaciones</p>
+</div>
+<a href="academia.html" class="btn">Abrir</a>
+</div>
+
+<div class="module">
+<div class="icon">♻️</div>
+<div class="info">
+<h3>Registro de Acciones</h3>
+<p>Seguimiento diario de residuos</p>
+</div>
+<a href="acciones.html" class="btn">Abrir</a>
+</div>
+
+<div class="module">
+<div class="icon">📊</div>
+<div class="info">
+<h3>Impacto Ambiental</h3>
+<p>Indicadores y resultados</p>
+</div>
+<a href="impacto.html" class="btn">Abrir</a>
+</div>
+
+<div class="module">
+<div class="icon">🗺️</div>
+<div class="info">
+<h3>Red Plaza Ñuñoa</h3>
+<p>Locales adheridos</p>
+</div>
+<a href="red.html" class="btn">Abrir</a>
+</div>
+
+</div>
+
+<div class="bottom-nav">
+<a href="dashboard.html">🏠<br>Inicio</a>
+<a href="academia.html">📚<br>Academia</a>
+<a href="acciones.html">♻️<br>Acciones</a>
+<a href="impacto.html">📊<br>Impacto</a>
+<a href="cliente.html">👤<br>Cliente</a>
+</div>
+
+</body>
+</html>
+```

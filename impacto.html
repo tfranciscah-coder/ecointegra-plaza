@@ -21,49 +21,71 @@ padding-bottom:90px;
 }
 
 .header{
-background:#0f766e;
+background:linear-gradient(135deg,#0f766e,#14b8a6);
 color:white;
-padding:20px;
-border-radius:0 0 25px 25px;
+padding:25px;
+border-radius:0 0 30px 30px;
 }
 
 .container{
 padding:15px;
 }
 
-.metric-card{
+.circle-card{
 background:white;
 padding:20px;
-border-radius:18px;
+border-radius:20px;
 margin-bottom:15px;
 box-shadow:0 4px 10px rgba(0,0,0,.08);
 text-align:center;
 }
 
-.metric-number{
-font-size:36px;
+.circle{
+width:120px;
+height:120px;
+border-radius:50%;
+border:10px solid #14b8a6;
+display:flex;
+align-items:center;
+justify-content:center;
+margin:auto;
+font-size:28px;
 font-weight:bold;
 color:#0f766e;
-margin-bottom:5px;
 }
 
-.metric-label{
-color:#666;
-font-size:14px;
+.metric-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:12px;
+margin-top:15px;
+}
+
+.metric{
+background:white;
+padding:15px;
+border-radius:18px;
+text-align:center;
+box-shadow:0 4px 10px rgba(0,0,0,.08);
+}
+
+.metric h2{
+color:#0f766e;
 }
 
 .achievement{
-background:#ecfdf5;
+background:white;
 padding:15px;
-border-radius:15px;
-margin-bottom:10px;
+border-radius:18px;
+margin-top:12px;
+box-shadow:0 4px 10px rgba(0,0,0,.08);
 }
 
 .section-title{
 font-size:18px;
 font-weight:bold;
-color:#0f766e;
 margin:20px 0 10px;
+color:#0f766e;
 }
 
 .bottom-nav{
@@ -92,42 +114,54 @@ text-align:center;
 <body>
 
 <div class="header">
-<h2>📊 Impacto Ambiental</h2>
-<p>Resultados obtenidos por el establecimiento</p>
+<h1>📊 Impacto Ambiental</h1>
+<p>Resultados de sostenibilidad del establecimiento</p>
 </div>
 
 <div class="container">
 
-<div class="metric-card">
-<div class="metric-number">1450 Kg</div>
-<div class="metric-label">
-Residuos recuperados
-</div>
+<div class="circle-card">
+
+<div class="circle">
+92%
 </div>
 
-<div class="metric-card">
-<div class="metric-number">2.500 L</div>
-<div class="metric-label">
-Agua ahorrada
-</div>
+<h3 style="margin-top:15px;color:#0f766e;">
+Nivel Sustentable
+</h3>
+
+<p>
+Certificación ambiental del local
+</p>
+
 </div>
 
-<div class="metric-card">
-<div class="metric-number">35</div>
-<div class="metric-label">
-Árboles equivalentes protegidos
-</div>
+<div class="metric-grid">
+
+<div class="metric">
+<h2>1450</h2>
+<p>Kg recuperados</p>
 </div>
 
-<div class="metric-card">
-<div class="metric-number">92%</div>
-<div class="metric-label">
-Cumplimiento sustentable
+<div class="metric">
+<h2>2500</h2>
+<p>Litros ahorrados</p>
 </div>
+
+<div class="metric">
+<h2>35</h2>
+<p>Árboles protegidos</p>
+</div>
+
+<div class="metric">
+<h2>78%</h2>
+<p>Reciclaje</p>
+</div>
+
 </div>
 
 <div class="section-title">
-🏆 Logros Obtenidos
+🏆 Logros
 </div>
 
 <div class="achievement">

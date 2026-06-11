@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -20,10 +21,10 @@ padding-bottom:90px;
 }
 
 .header{
-background:#0f766e;
+background:linear-gradient(135deg,#0f766e,#14b8a6);
 color:white;
-padding:20px;
-border-radius:0 0 25px 25px;
+padding:25px;
+border-radius:0 0 30px 30px;
 text-align:center;
 }
 
@@ -40,15 +41,33 @@ box-shadow:0 4px 10px rgba(0,0,0,.08);
 text-align:center;
 }
 
+.avatar{
+width:90px;
+height:90px;
+border-radius:50%;
+background:#14b8a6;
+margin:auto;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:40px;
+color:white;
+margin-bottom:15px;
+}
+
 .points{
 font-size:42px;
 font-weight:bold;
 color:#0f766e;
 }
 
-.qr{
-font-size:100px;
-margin:15px 0;
+.badge{
+display:inline-block;
+background:#14b8a6;
+color:white;
+padding:8px 15px;
+border-radius:20px;
+margin-top:10px;
 }
 
 .reward{
@@ -59,12 +78,11 @@ margin-bottom:10px;
 text-align:left;
 }
 
-.badge{
-display:inline-block;
-background:#14b8a6;
-color:white;
-padding:8px 14px;
-border-radius:20px;
+.qr-box{
+background:#f8fafc;
+padding:20px;
+border-radius:15px;
+border:2px dashed #14b8a6;
 margin-top:10px;
 }
 
@@ -94,24 +112,28 @@ text-align:center;
 <body>
 
 <div class="header">
-<h2>👤 Experiencia Cliente</h2>
-<p>Participa y genera impacto positivo</p>
+<h1>👤 Experiencia Cliente</h1>
+<p>Participa en el cambio sustentable</p>
 </div>
 
 <div class="container">
 
 <div class="card">
 
-<h3>Puntos Sustentables</h3>
-
-<div class="points">
-1.250
+<div class="avatar">
+🌱
 </div>
 
-<p>Puntos acumulados por compras responsables</p>
+<h3>Usuario ECOINTEGRA</h3>
+
+<div class="points">
+1250
+</div>
+
+<p>Puntos sustentables acumulados</p>
 
 <div class="badge">
-Nivel Eco Líder
+Eco Líder
 </div>
 
 </div>
@@ -120,26 +142,28 @@ Nivel Eco Líder
 
 <h3>📱 Código QR</h3>
 
-<div class="qr">
-🔳
-</div>
+<div class="qr-box">
 
-<p>
-Escanea para conocer el impacto ambiental del local.
+<p><strong>Escanea para visitar ECOINTEGRA PLAZA</strong></p>
+
+<p style="margin-top:10px;">
+https://tfranciscah-coder.github.io/ecointegra-plaza/
 </p>
+
+</div>
 
 </div>
 
 <div class="card">
 
-<h3>🎁 Recompensas Disponibles</h3>
+<h3>🎁 Recompensas</h3>
 
 <div class="reward">
 ☕ Café gratis por 1000 puntos
 </div>
 
 <div class="reward">
-🥗 15% de descuento por 1500 puntos
+🥗 15% descuento por 1500 puntos
 </div>
 
 <div class="reward">
@@ -152,11 +176,13 @@ Escanea para conocer el impacto ambiental del local.
 
 <h3>🌎 Tu Impacto</h3>
 
-<p>Has contribuido a recuperar:</p>
-
-<h2 style="color:#0f766e;margin-top:10px;">
-125 Kg de residuos
+<h2 style="color:#0f766e;">
+125 Kg recuperados
 </h2>
+
+<p>
+Gracias a tus compras responsables.
+</p>
 
 </div>
 
@@ -172,3 +198,4 @@ Escanea para conocer el impacto ambiental del local.
 
 </body>
 </html>
+```

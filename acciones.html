@@ -1,0 +1,164 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registro de Acciones</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#dff7f5;
+padding-bottom:90px;
+}
+
+.header{
+background:#0f766e;
+color:white;
+padding:20px;
+border-radius:0 0 25px 25px;
+}
+
+.container{
+padding:15px;
+}
+
+.card{
+background:white;
+padding:18px;
+border-radius:18px;
+margin-bottom:15px;
+box-shadow:0 4px 10px rgba(0,0,0,.08);
+}
+
+label{
+display:block;
+margin-bottom:5px;
+font-weight:bold;
+color:#0f766e;
+}
+
+input, select{
+width:100%;
+padding:12px;
+border:1px solid #ddd;
+border-radius:12px;
+margin-bottom:15px;
+}
+
+.btn{
+width:100%;
+padding:12px;
+background:#14b8a6;
+color:white;
+border:none;
+border-radius:12px;
+font-weight:bold;
+}
+
+.history{
+margin-top:20px;
+}
+
+.item{
+background:#ecfdf5;
+padding:12px;
+border-radius:12px;
+margin-bottom:10px;
+}
+
+.bottom-nav{
+position:fixed;
+bottom:0;
+left:0;
+width:100%;
+background:white;
+display:flex;
+justify-content:space-around;
+padding:12px;
+box-shadow:0 -3px 10px rgba(0,0,0,.1);
+}
+
+.bottom-nav a{
+text-decoration:none;
+color:#0f766e;
+font-size:12px;
+font-weight:bold;
+text-align:center;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="header">
+<h2>♻️ Registro de Acciones</h2>
+<p>Gestión sustentable del establecimiento</p>
+</div>
+
+<div class="container">
+
+<div class="card">
+
+<label>Tipo de Residuo</label>
+
+<select>
+<option>Orgánico</option>
+<option>Plástico</option>
+<option>Vidrio</option>
+<option>Cartón</option>
+<option>Aceite usado</option>
+</select>
+
+<label>Cantidad (Kg)</label>
+
+<input type="number" placeholder="Ingrese cantidad">
+
+<button class="btn">
+Registrar Acción
+</button>
+
+</div>
+
+<div class="history">
+
+<div class="item">
+🥬 25 Kg de residuos orgánicos registrados
+</div>
+
+<div class="item">
+♻️ 18 Kg de plástico reciclado
+</div>
+
+<div class="item">
+🍾 12 Kg de vidrio recuperado
+</div>
+
+<div class="item">
+📦 30 Kg de cartón reutilizado
+</div>
+
+</div>
+
+</div>
+
+<div class="bottom-nav">
+<a href="dashboard.html">🏠<br>Inicio</a>
+<a href="academia.html">📚<br>Academia</a>
+<a href="acciones.html">♻️<br>Acciones</a>
+<a href="impacto.html">📊<br>Impacto</a>
+<a href="cliente.html">👤<br>Cliente</a>
+</div>
+
+</body>
+</html>
+```
